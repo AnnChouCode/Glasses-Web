@@ -23,106 +23,104 @@
 <body>
     <!-- SECTION NAV -->
     <nav class="nav bg-red">
-        <div class="container d-flex f-jcsb f-aic nav-bar">
-            <h1 class="logo"><a href="index.html">Glasses</a></h1>
+    <div class="container d-flex f-jcsb f-aic nav-bar">
+      <h1 class="logo"><a href="index.html">Glasses</a></h1>
             <ul class="nav-menu d-flex f-aic fc-white fz-20 gap-24">
                 <li><a href="#">系列鏡框</a></li>
                 <li><a href="storelist.html">門市據點</a></li>
                 <li><a href="#">部落格</a></li>
                 <li><a href="#">常見問題</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- SECTION STORE -->
-    <div class="store container page-pd">
-        <h2 class="page-title fz-48 fw-bold">門市據點</h2>
-        <div class="store-select">
-            <span class="fz-24">選擇地區</span>
-            <select id="storeDropdown" class="select-dropdown" name="store-select">
-                <option value="">請選擇分店</option>
-                <optgroup label="台北市">
-                    <option value="台北中山旗艦店" selected>台北中山旗艦店</option>
-                    <option value="台北綠園店">台北綠園店</option>
-                </optgroup>
-                <optgroup label="台中市">
-                    <option value="台中清水旗艦店">台中清水旗艦店</option>
-                </optgroup>
-                <optgroup label="高雄市">
-                    <option value="高雄中正形象店">高雄中正形象店</option>
-                    <option value="高雄夢時代店">高雄夢時代店</option>
-                </optgroup>
-            </select>
-        </div>
-        <div class="store-content d-flex gap-24">
-            <div class="store-card">
-                <div id="storePhoto" class="store-photo"></div>
-                <div class="store-info">
-                    <p id="storeTitle" class="store-title fz-24">台北中山旗艦店</p>
-                    <ul class="store-detail fz-20">
-                        <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                                phone
-                            </span>
-                            <p id="storePhone">電話：(02)000-1234</p>
-                        </li>
-                        <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                                schedule
-                            </span>
-                            <p id="storeHours">營業時間：10:00-21:00</p>
-                        </li>
-                        <li class="d-flex f-aib"><span class="material-icons-outlined">
-                                place
-                            </span>
-                            <p id="storeAddress">地址：台北市中山區南京東路25巷2-1號</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636138459286!2d121.53300454855906!3d25.0522709805177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1689689324255!5m2!1szh-TW!2stw"
-                width="58.333%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="footer bg-red fc-white">
-        <div class="container">
-            <div class="footer-content">
-                <div class="d-flex f-jcsb f-aic mb-24">
-                    <ul class="footer-menu d-flex f-jcsb fz-16">
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="#">系列鏡框</a></li>
-                        <li><a href="storelist.html">門市據點</a></li>
-                        <li><a href="#">部落格</a></li>
-                        <li><a href="#">常見問題</a></li>
-                    </ul>
-                    <div class="d-flex gap-32 social-icon">
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAgMAQ8NB/MECgcCFg35yQHuCwUHVOCgWvjM0hpQAAAgZJREFUaN7tmduS2yAMQDGXBGxc13G7W/3/j7bTdnbW64kPIPLm85aZhBMkI7AwFxcX5bg43qwN8gdvbbrFyXQk3qwcmFN2pgf3xcszfmWjJQc5xd+cavhZAJUiBinCj6YFt0gx4d6Q21lqqJ7EKJXYukwkAXRhckEa8Gzg8dmgH19vsAIoDUkUzK7P8+ntP47BDLi+BAnj50DETXYMkOBZABvNF2TPeRoGOYB/sCYNE8V+MyiQQfGEZlMg8M+36wjjL6ZEIKl1At6VCWSqmQAHV4qn8ACBAwFNdaIVYEBA+9tYFyGXk/2LSGHBCCDYL+Hs5YQJIsQ/yvVngCzALj6+Pl+PGsGGXz7iBYCiSEl4l66CnwfBm07AZdH1FfzoLeDC+72v4Nsl6CawhhheLbCvFsyvFpTmwDUK7rDQ1IKttFS8NQqG0mL33ihIpeXarG0CW7zrP9oE5VvmWC/gZ4OPLfPtg30P7D+ponURdMWOz9djP8EKh1+1YKTjOwuaDvpRKeB3qNBJMMFLoFaQYN2rBRMUd4WAuxWLXrCel5ZVLYiwA2oFgwFGncAaJGkEq1M0HUEATUEwgEDROAWBovULAhgfSSRQ3yEMIKD2PhM9CGB9MS6BgMLDxAACuiRi8soCvzjdRd25wA/OKLkn/1TwyKYLcQlHgYfL0mrJuPu0Tebi4qKQ3xvMdFMYmeBEAAAAAElFTkSuQmCC" alt="facebook"></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAP8CAHmAQoPDQMLBwkFDg3xMJr08qN7190AAAAqVJREFUaN7tWemO4yAMxmDOnG1n8v6PutJuoagTQwytpivl+xeR+AMf+Ig4ceJEFVBBaJYcRiu3Q3By0sjdt3UbD+vE4NDr1gIJB3Ujt1ZYI+oYtw64+iHs1gfNl79IGmwGmwu2I+ARm4Eacp+bBY35oUzLi6BZPj6ld4VpIwPyQ36JH/u6gkbRADPUzBAqLxz2QFdZV6IVvrhDEyOeK3aepAr/jFi0gr6vAlP+kJlN3WUg8WJk52DK94UlL3FNFjbpLs13ORR8CJnuv0XkV6UjoriqIQQAUyII8eEnVDwcAaOtj9pQgVKRuD9dSWMpYutPOXRV5rGx3Pk8SSALBMbu5Ba146ZJzIUkgL0I2a8A/F1RoAaFydn5BHSSc5o05YW8R4CVRDWDINqKl6R1N4HKdD79XTRz7lFh/30kCZAK1GXOvEolitUwCZ78M9V409OCTwtdBIq2pk1K6iAwLskn/XqzHQR6T0ZiX6LZWglSbDhTrKLGZgLMqwBaSb6VIGkoP0BtfeYQqEqZYXaCExgExRs8f2HsJNA1AtVJACSB+k8I6ir6WCO3uOn8lkD72Kvi7ZedGMnrOs92+KaEc4vsn5wyhVlenvSR6v1X2C1bnGESwI+qPsHf24IvG81LF2rYXDo6onTsKH6H9uL3/eV7fwNCnffCa6GQaqFIMZdyE1inWJQpzkOufW3sRI/NtkjQ1ogHgPIcD+lGPKTs0QN9N9BrhiG0Ew2FNdkqmxjndA6kiJYRGSM1DtAVPcWm87VClseW8Kqx5kK6QBeDsenz+mj5xo8G8OkSLIVJhJuQJf7rRg3H6avfTxoOqQZGu5Lj/XpyWWUJrvMXCB/6138SCRF8s/zhoPPppfNHXR0z+1fjMiE3MPE7wDGEb7yKEydO/CL+AF/Ez4tgwo4wAAAAAElFTkSuQmCC" alt="instagram"></a>
-                        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAgMBA8GAw0BDgsKBQIJBwb5+PscVzyAAAAl1JREFUaN7t2dmO4jAQheGyXd6ysZz3f9dRBIyHCU7Kjq1WS3xXSN3wYyphienr67cyVhWzhoTswKjCg5U8fMQJ8SjhPE7yjnYYxmlsKMuiCUsZBo1k1uAYjfDnOXg04wUDaD+GiIZiZgE9lzCgqXETYBzRWj0s2uMIl50DPFr33/9fhrJzwe49uqNPgh0KhqDy74+BsuYROUoWYEv75uVUYAx0yOnqAE8koioDPpCQ4ZrAEEjMcXlgpBKBSwM+UBHHZYEYqJApCzgqpkoCiip4eSAGqmDkAUtVBmmAA1Ux0sBClbwskA6hRevp9ff15qz1nVZWa0vT5pxcZIFILxpQ/940r/koQKW7aHpysoDeDbDLB0gWULsB+JAC3qxcGoIocNkP4JYCmt5pUcAcBDD9DUS1SqfN2CAwAjznZqAaBIIHfC6gG8yAHAP8DLBevd3h9FH0+I6WGXIsPw9uZhVS4PGm9jbkiZ4CRAHerli9BULE5xlMsgDMQYBcJjAKA+PmDd6s97XkXsu7rIfCpJ8WeuLOnwdW/ImmqEaIokD9EhTEASw1C+CCAEzd56U8wDMVunX+bmohCdQXXMXvAz/3+X2QsCl6fHkguYp/QVUGoI1svsWB5HY4iSuqAsnd0Y5wQ20giddZcJ21JpD429XR1sQ4H0i0pTfhDjQJJBfZy1Mf0JRcGT0DswY6BJbN0xcHrGwG8k0AW3Vh3KSDp/gCOUPApVfnANddmFXmGiEydL+03P/ieN8l2N4bFD+zxUITGjHdt7mypiYbdb23Gjtvlv78du+ZDeuvr1/qD85zMPTaZQlWAAAAAElFTkSuQmCC" alt="line"></a>
-                      </div>
-                </div>
-                <div class="footer-contact d-flex gap-8 fz-36 mb-32">
-                    <a class="d-flex f-aic" href="tel:0800000000"><span class="material-icons-outlined fz-36">
-                            call
-                        </span><span>0800-000-000</span></a>
-                    <a class="d-flex f-aic" href="glasses@business.com"><span class="material-icons-outlined fz-36">
-                            email
-                        </span><span>glasses@business.com</span></a>
-                </div>
+  </nav>
+        <!-- SECTION STORE -->
+        <div class="store container page-pd">
+            <h2 class="page-title fz-48 fw-bold">門市據點</h2>
+            <div class="store-select">
+                <span class="fz-24">選擇地區</span>
+                <select id="storeDropdown" class="select-dropdown" name="store-select">
+                    <option value="">請選擇分店</option>
+                    <optgroup label="台北市">
+                        <option value="台北中山旗艦店" selected>台北中山旗艦店</option>
+                        <option value="台北綠園店">台北綠園店</option>
+                    </optgroup>
+                    <optgroup label="台中市">
+                        <option value="台中清水旗艦店">台中清水旗艦店</option>
+                    </optgroup>
+                    <optgroup label="高雄市">
+                        <option value="高雄中正形象店">高雄中正形象店</option>
+                        <option value="高雄夢時代店">高雄夢時代店</option>
+                    </optgroup>
+                </select>
             </div>
-            <div class="footer-link d-flex f-jcsb">
-                <p class="fz-16 ff-roboto">Copyright © 2020 Glasses.All rights reserved.</p>
-                <ul class="fz-14 d-flex f-jcsb f-aic">
-                    <li><a href="#">隱私權政策</a></li>
-                    <li><a href="#">服務條款</a></li>
-                </ul>
+            <div class="store-content d-flex gap-24">
+                <div class="store-card">
+                    <div id="storePhoto" class="store-photo"></div>
+                    <div class="store-info">
+                        <p id="storeTitle" class="store-title fz-24">台北中山旗艦店</p>
+                        <ul class="store-detail fz-20">
+                            <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
+                                    phone
+                                </span>
+                                <p id="storePhone">電話：(02)000-1234</p>
+                            </li>
+                            <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
+                                    schedule
+                                </span>
+                                <p id="storeHours">營業時間：10:00-21:00</p>
+                            </li>
+                            <li class="d-flex f-aib"><span class="material-icons-outlined">
+                                    place
+                                </span>
+                                <p id="storeAddress">地址：台北市中山區南京東路25巷2-1號</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636138459286!2d121.53300454855906!3d25.0522709805177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1689689324255!5m2!1szh-TW!2stw"
+                    width="58.333%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </footer>
 
-    
+        <!-- FOOTER -->
+        <footer class="footer bg-red fc-white">
+    <div class="container">
+      <div class="footer-content">
+        <div class="d-flex f-jcsb f-aic mb-24">
+          <ul class="footer-menu d-flex f-jcsb fz-16">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="storelist.html">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+        </ul>
+          <div class="d-flex gap-32 social-icon">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAgMAQ8NB/MECgcCFg35yQHuCwUHVOCgWvjM0hpQAAAgZJREFUaN7tmduS2yAMQDGXBGxc13G7W/3/j7bTdnbW64kPIPLm85aZhBMkI7AwFxcX5bg43qwN8gdvbbrFyXQk3qwcmFN2pgf3xcszfmWjJQc5xd+cavhZAJUiBinCj6YFt0gx4d6Q21lqqJ7EKJXYukwkAXRhckEa8Gzg8dmgH19vsAIoDUkUzK7P8+ntP47BDLi+BAnj50DETXYMkOBZABvNF2TPeRoGOYB/sCYNE8V+MyiQQfGEZlMg8M+36wjjL6ZEIKl1At6VCWSqmQAHV4qn8ACBAwFNdaIVYEBA+9tYFyGXk/2LSGHBCCDYL+Hs5YQJIsQ/yvVngCzALj6+Pl+PGsGGXz7iBYCiSEl4l66CnwfBm07AZdH1FfzoLeDC+72v4Nsl6CawhhheLbCvFsyvFpTmwDUK7rDQ1IKttFS8NQqG0mL33ihIpeXarG0CW7zrP9oE5VvmWC/gZ4OPLfPtg30P7D+ponURdMWOz9djP8EKh1+1YKTjOwuaDvpRKeB3qNBJMMFLoFaQYN2rBRMUd4WAuxWLXrCel5ZVLYiwA2oFgwFGncAaJGkEq1M0HUEATUEwgEDROAWBovULAhgfSSRQ3yEMIKD2PhM9CGB9MS6BgMLDxAACuiRi8soCvzjdRd25wA/OKLkn/1TwyKYLcQlHgYfL0mrJuPu0Tebi4qKQ3xvMdFMYmeBEAAAAAElFTkSuQmCC" alt="facebook"></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAP8CAHmAQoPDQMLBwkFDg3xMJr08qN7190AAAAqVJREFUaN7tWemO4yAMxmDOnG1n8v6PutJuoagTQwytpivl+xeR+AMf+Ig4ceJEFVBBaJYcRiu3Q3By0sjdt3UbD+vE4NDr1gIJB3Ujt1ZYI+oYtw64+iHs1gfNl79IGmwGmwu2I+ARm4Eacp+bBY35oUzLi6BZPj6ld4VpIwPyQ36JH/u6gkbRADPUzBAqLxz2QFdZV6IVvrhDEyOeK3aepAr/jFi0gr6vAlP+kJlN3WUg8WJk52DK94UlL3FNFjbpLs13ORR8CJnuv0XkV6UjoriqIQQAUyII8eEnVDwcAaOtj9pQgVKRuD9dSWMpYutPOXRV5rGx3Pk8SSALBMbu5Ba146ZJzIUkgL0I2a8A/F1RoAaFydn5BHSSc5o05YW8R4CVRDWDINqKl6R1N4HKdD79XTRz7lFh/30kCZAK1GXOvEolitUwCZ78M9V409OCTwtdBIq2pk1K6iAwLskn/XqzHQR6T0ZiX6LZWglSbDhTrKLGZgLMqwBaSb6VIGkoP0BtfeYQqEqZYXaCExgExRs8f2HsJNA1AtVJACSB+k8I6ir6WCO3uOn8lkD72Kvi7ZedGMnrOs92+KaEc4vsn5wyhVlenvSR6v1X2C1bnGESwI+qPsHf24IvG81LF2rYXDo6onTsKH6H9uL3/eV7fwNCnffCa6GQaqFIMZdyE1inWJQpzkOufW3sRI/NtkjQ1ogHgPIcD+lGPKTs0QN9N9BrhiG0Ew2FNdkqmxjndA6kiJYRGSM1DtAVPcWm87VClseW8Kqx5kK6QBeDsenz+mj5xo8G8OkSLIVJhJuQJf7rRg3H6avfTxoOqQZGu5Lj/XpyWWUJrvMXCB/6138SCRF8s/zhoPPppfNHXR0z+1fjMiE3MPE7wDGEb7yKEydO/CL+AF/Ez4tgwo4wAAAAAElFTkSuQmCC" alt="instagram"></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAgMBA8GAw0BDgsKBQIJBwb5+PscVzyAAAAl1JREFUaN7t2dmO4jAQheGyXd6ysZz3f9dRBIyHCU7Kjq1WS3xXSN3wYyphienr67cyVhWzhoTswKjCg5U8fMQJ8SjhPE7yjnYYxmlsKMuiCUsZBo1k1uAYjfDnOXg04wUDaD+GiIZiZgE9lzCgqXETYBzRWj0s2uMIl50DPFr33/9fhrJzwe49uqNPgh0KhqDy74+BsuYROUoWYEv75uVUYAx0yOnqAE8koioDPpCQ4ZrAEEjMcXlgpBKBSwM+UBHHZYEYqJApCzgqpkoCiip4eSAGqmDkAUtVBmmAA1Ux0sBClbwskA6hRevp9ff15qz1nVZWa0vT5pxcZIFILxpQ/940r/koQKW7aHpysoDeDbDLB0gWULsB+JAC3qxcGoIocNkP4JYCmt5pUcAcBDD9DUS1SqfN2CAwAjznZqAaBIIHfC6gG8yAHAP8DLBevd3h9FH0+I6WGXIsPw9uZhVS4PGm9jbkiZ4CRAHerli9BULE5xlMsgDMQYBcJjAKA+PmDd6s97XkXsu7rIfCpJ8WeuLOnwdW/ImmqEaIokD9EhTEASw1C+CCAEzd56U8wDMVunX+bmohCdQXXMXvAz/3+X2QsCl6fHkguYp/QVUGoI1svsWB5HY4iSuqAsnd0Y5wQ20giddZcJ21JpD429XR1sQ4H0i0pTfhDjQJJBfZy1Mf0JRcGT0DswY6BJbN0xcHrGwG8k0AW3Vh3KSDp/gCOUPApVfnANddmFXmGiEydL+03P/ieN8l2N4bFD+zxUITGjHdt7mypiYbdb23Gjtvlv78du+ZDeuvr1/qD85zMPTaZQlWAAAAAElFTkSuQmCC" alt="line"></a>
+          </div>
+        </div>
+        <div class="footer-contact d-flex gap-8 fz-36 mb-32">
+          <a class="d-flex f-aic" href="tel:0800000000"><span class="material-icons-outlined fz-36">
+              call
+            </span><span>0800-000-000</span></a>
+          <a class="d-flex f-aic" href="mailto:glasses@business.com"><span class="material-icons-outlined fz-36">
+              email
+            </span><span>glasses@business.com</span></a>
+        </div>
+      </div>
+      <div class="footer-link d-flex f-jcsb">
+        <p class="fz-16 ff-roboto">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="fz-14 d-flex f-jcsb f-aic">
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+        </ul>
+    </div>
+    </div>
+  </footer>
+            
 </body>
 
 </html>
