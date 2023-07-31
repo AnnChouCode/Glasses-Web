@@ -260,7 +260,9 @@
 
                             // 點選「請選擇地區」
                             if (clickedLocation === "") {
-                                locationText = getDefaultLocationData();
+                                storeList.forEach(item =>{
+                                    locationText += getLocationCard(item);
+                                })
                             } else {
                                 // 點選「城市」
                                 storeList.forEach(item => {
@@ -273,124 +275,7 @@
                             }
                             locationContent.innerHTML = locationText;
                         });
-                    });
-
-                    // 獲得 location-content 的預設資料
-                    function getDefaultLocationData() {
-                        return `<div id="locationContent" class="location-content d-flex f-wrap gap-24">
-            <div class="location-card">
-                <img class="location-photo" src="../assets/image/store-1.png" alt="台北中山旗艦店">
-                <p class="location-title fz-24">台北中山旗艦店</p>
-                <ul class="location-detail fz-20">
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            phone
-                        </span>
-                        <p>電話：(02)000-1234</p>
-                    </li>
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            schedule
-                        </span>
-                        <p>營業時間：10:00-21:00</p>
-                    </li>
-                    <li class="d-flex f-aib"><span class="material-icons-outlined">
-                            place
-                        </span>
-                        <p>地址：台北市中山區南京東路25巷2-1號</p>
-                    </li>
-                </ul>
-                <a href="store-台北中山旗艦店.html" class="btn-store ta-center d-block bg-black fc-white"
-                    type="button">詳細資訊</a>
-            </div>
-            <div class="location-card">
-                <img class="location-photo" src="../assets/image/store-2.png" alt="台北綠園店">
-                <p class="location-title fz-24">台北綠園店</p>
-                <ul class="location-detail fz-20">
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            phone
-                        </span>
-                        <p>電話：(02)000-2345</p>
-                    </li>
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            schedule
-                        </span>
-                        <p>營業時間：10:00-21:00</p>
-                    </li>
-                    <li class="d-flex f-aib"><span class="material-icons-outlined">
-                            place
-                        </span>
-                        <p>地址：台北市中正區復興南路 132-1 號</p>
-                    </li>
-                </ul>
-                <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-            </div>
-            <div class="location-card">
-                <img class="location-photo" src="../assets/image/store-3.png" alt="台中清水旗艦店">
-                <p class="location-title fz-24">台中清水旗艦店</p>
-                <ul class="location-detail fz-20">
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            phone
-                        </span>
-                        <p>電話：(02)000-1234</p>
-                    </li>
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            schedule
-                        </span>
-                        <p>營業時間：10:00-21:00</p>
-                    </li>
-                    <li class="d-flex f-aib"><span class="material-icons-outlined">
-                            place
-                        </span>
-                        <p>地址：台中市清水區經南一路 23 號 8 樓</p>
-                    </li>
-                </ul>
-                <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-            </div>
-            <div class="location-card">
-                <img class="location-photo" src="../assets/image/store-4.png" alt="高雄中正形象店">
-                <p class="location-title fz-24">高雄中正形象店</p>
-                <ul class="location-detail fz-20">
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            phone
-                        </span>
-                        <p>電話：(07)000-2345</p>
-                    </li>
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            schedule
-                        </span>
-                        <p>營業時間：10:00-21:00</p>
-                    </li>
-                    <li class="d-flex f-aib"><span class="material-icons-outlined">
-                            place
-                        </span>
-                        <p>地址：高雄市苓雅區中正路 38 號 12 樓</p>
-                    </li>
-                </ul>
-                <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-            </div>
-            <div class="location-card">
-                <img class="location-photo" src="../assets/image/store-5.png" alt="高雄夢時代店">
-                <p class="location-title fz-24">高雄夢時代店</p>
-                <ul class="location-detail fz-20">
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            phone
-                        </span>
-                        <p>電話：(07)000-1234</p>
-                    </li>
-                    <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
-                            schedule
-                        </span>
-                        <p>營業時間：10:00-21:00</p>
-                    </li>
-                    <li class="d-flex f-aib"><span class="material-icons-outlined">
-                            place
-                        </span>
-                        <p>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
-                    </li>
-                </ul>
-                <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-            </div>
-        </div>`
-                    }
+                    });                  
 
                     // 獲得 select 篩選過後的新資料
                     function getLocationCard(item) {
