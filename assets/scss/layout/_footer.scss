@@ -4,6 +4,10 @@
 
     &-menu {
         width: 480px;
+
+        a:hover{
+            border-bottom: 1px solid white;
+        }
     }
 
     &-contact {
