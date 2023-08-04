@@ -25,8 +25,8 @@
     <meta name="twitter:title" content="Glasses｜看得清，才能看得遠" />    
     <meta name="twitter:description" content="單一價格、20 分鐘即可取件、安心售後服務、使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。用專業的心，做專業的事。" />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/AnnChouCode/Glasses-Web/main/assets/image/home-header.png"/>
-  <script type="module" crossorigin src="/Glasses-Web/assets/all-4f5ba726.js"></script>
-  <link rel="stylesheet" href="/Glasses-Web/assets/all-ac865b48.css">
+  <script type="module" crossorigin src="/Glasses-Web/assets/all-af9df249.js"></script>
+  <link rel="stylesheet" href="/Glasses-Web/assets/all-3771fa61.css">
 </head>
     <body>
         <!-- SECTION NAV -->
@@ -53,10 +53,10 @@
                         <option value="高雄市">高雄市</option>
                     </select>
                 </div>
-                <div id="locationContent" class="location-content d-flex f-wrap gap-24">
-                    <div class="location-card">
+                <ul id="locationContent" class="location-content d-flex f-wrap gap-24">
+                    <li class="location-card">
                         <img class="location-photo" src="/Glasses-Web/assets/store-1-1f271787.png" alt="台北中山旗艦店">
-                        <p class="location-title fz-24">台北中山旗艦店</p>
+                        <h3 class="location-title fz-24">台北中山旗艦店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -76,10 +76,10 @@
                         </ul>
                         <a href="store-台北中山旗艦店.html" class="btn-store ta-center d-block bg-black fc-white"
                             type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="/Glasses-Web/assets/store-2-74dc695a.png" alt="台北綠園店">
-                        <p class="location-title fz-24">台北綠園店</p>
+                        <h3 class="location-title fz-24">台北綠園店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -98,10 +98,10 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="/Glasses-Web/assets/store-3-65c3463f.png" alt="台中清水旗艦店">
-                        <p class="location-title fz-24">台中清水旗艦店</p>
+                        <h3 class="location-title fz-24">台中清水旗艦店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -120,10 +120,10 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="/Glasses-Web/assets/store-4-59fac843.png" alt="高雄中正形象店">
-                        <p class="location-title fz-24">高雄中正形象店</p>
+                        <h3 class="location-title fz-24">高雄中正形象店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -142,10 +142,10 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="/Glasses-Web/assets/store-5-9d88888b.png" alt="高雄夢時代店">
-                        <p class="location-title fz-24">高雄夢時代店</p>
+                        <h3 class="location-title fz-24">高雄夢時代店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -164,8 +164,8 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
 
             <!-- FOOTER -->
@@ -291,9 +291,9 @@
 
                     // 獲得套用卡片 html 後的新資料
                     function getLocationCard(item) {
-                        return `<div class="location-card">
+                        return `<li class="location-card">
             <img class="location-photo" src="${item.photo}" alt="${item.store}">
-            <p class="location-title fz-24">${item.store}</p>
+            <h3 class="location-title fz-24">${item.store}</h3>
             <ul class="location-detail fz-20">
                 <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                         phone
@@ -312,7 +312,7 @@
                 </li>
             </ul>
             <a href="store-台北中山旗艦店.html" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-        </div>`
+        </li>`
                     }
                 </script>
     </body>
