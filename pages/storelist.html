@@ -19,10 +19,10 @@
                         <option value="高雄市">高雄市</option>
                     </select>
                 </div>
-                <div id="locationContent" class="location-content d-flex f-wrap gap-24">
-                    <div class="location-card">
+                <ul id="locationContent" class="location-content d-flex f-wrap gap-24">
+                    <li class="location-card">
                         <img class="location-photo" src="../assets/image/store-1.png" alt="台北中山旗艦店">
-                        <p class="location-title fz-24">台北中山旗艦店</p>
+                        <h3 class="location-title fz-24">台北中山旗艦店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -42,10 +42,10 @@
                         </ul>
                         <a href="store-台北中山旗艦店.html" class="btn-store ta-center d-block bg-black fc-white"
                             type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="../assets/image/store-2.png" alt="台北綠園店">
-                        <p class="location-title fz-24">台北綠園店</p>
+                        <h3 class="location-title fz-24">台北綠園店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -64,10 +64,10 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="../assets/image/store-3.png" alt="台中清水旗艦店">
-                        <p class="location-title fz-24">台中清水旗艦店</p>
+                        <h3 class="location-title fz-24">台中清水旗艦店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -86,10 +86,10 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="../assets/image/store-4.png" alt="高雄中正形象店">
-                        <p class="location-title fz-24">高雄中正形象店</p>
+                        <h3 class="location-title fz-24">高雄中正形象店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -108,10 +108,10 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                    <div class="location-card">
+                    </li>
+                    <li class="location-card">
                         <img class="location-photo" src="../assets/image/store-5.png" alt="高雄夢時代店">
-                        <p class="location-title fz-24">高雄夢時代店</p>
+                        <h3 class="location-title fz-24">高雄夢時代店</h3>
                         <ul class="location-detail fz-20">
                             <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                                     phone
@@ -130,8 +130,8 @@
                             </li>
                         </ul>
                         <a href="#" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
 
             <!-- FOOTER -->
@@ -224,9 +224,9 @@
 
                     // 獲得套用卡片 html 後的新資料
                     function getLocationCard(item) {
-                        return `<div class="location-card">
+                        return `<li class="location-card">
             <img class="location-photo" src="${item.photo}" alt="${item.store}">
-            <p class="location-title fz-24">${item.store}</p>
+            <h3 class="location-title fz-24">${item.store}</h3>
             <ul class="location-detail fz-20">
                 <li class="mb-8 d-flex f-aib"><span class="material-icons-outlined">
                         phone
@@ -245,7 +245,7 @@
                 </li>
             </ul>
             <a href="store-台北中山旗艦店.html" class="btn-store ta-center d-block bg-black fc-white" type="button">詳細資訊</a>
-        </div>`
+        </li>`
                     }
                 </script>
     </body>
