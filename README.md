@@ -29,11 +29,11 @@ https://annchoucode.github.io/Glasses-Web/
   - 專案的 Node.js 版本需為 v16 以上
 
 ## 取得專案
-`git clone https://github.com/AnnChouCode/TeaTime-Gathering.git`
+`git clone https://github.com/AnnChouCode/Glasses-Web.git`
 
 ## 安裝套件
 `npm install i bootstrap` - 初次下載該範例專案後，需要使用 npm install 來安裝 Bootstrap 套件
 
 ## 運行套件
 - `npm run dev` - 執行開發模式
-- 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入 `http://localhost:5173/TeaTime-Gathering/pages/index.html`
+- 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入 `http://localhost:5173/Glasses-Web/pages/index.html`
