@@ -12,7 +12,14 @@ https://annchoucode.github.io/Glasses-Web/
 ![demo](https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glasses-1.jpg)
 ![demo](https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glass-2.jpg)
 
-# 安裝
+
+## 專案技術
+  - Vite
+  - Git Flow
+  - HTML、SCSS
+  - JavaScript
+    
+## 安裝
 以下將會引導你如何安裝此專案到你的電腦上。
   - 專案的 Node.js 版本需為 v16 以上
 
@@ -25,10 +32,3 @@ https://annchoucode.github.io/Glasses-Web/
 ## 運行套件
 - `npm run dev` - 執行開發模式
 - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入 `http://localhost:5173/TeaTime-Gathering/pages/index.html`
-
-
-# 專案技術
-  - Vite
-  - Git Flow
-  - HTML、SCSS
-  - JavaScript
