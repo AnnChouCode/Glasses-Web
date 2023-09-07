@@ -6,8 +6,9 @@
 
 # Glasses-Web
 https://annchoucode.github.io/Glasses-Web/
+設計稿來自於六角學院，此為課程作品
 
-# 畫面
+## 畫面
 ![demo](https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glasses-1.jpg)
 ![demo](https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glass-2.jpg)
 
@@ -29,8 +30,5 @@ https://annchoucode.github.io/Glasses-Web/
 # 專案技術
   - Vite
   - Git Flow
-  - Bootstrap 5 + 部分客製化 scss
-  - Swiper
-  - AOS Animate
-  - jQuery
+  - HTML、SCSS
   - JavaScript
