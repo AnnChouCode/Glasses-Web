@@ -13,6 +13,10 @@ https://annchoucode.github.io/Glasses-Web/
 ![demo](https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glasses-1.jpg)
 ![demo](https://github.com/AnnChouCode/image-stock/blob/main/Glasses-Web/glass-2.jpg)
 
+## 頁面
+- 首頁
+- 系列鏡框
+- 門市據點
 
 ## 專案技術
   - Vite
